@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Model SYSTEM "/opt/ericsson/arne/etc/arne14_1.dtd">
+<Model version="1" importVersion="14.1">
+  <Create>
+      <SubNetwork userLabel="IPRAN" networkType="IPRAN">
+         <ManagedElement sourceType="SIU">
+            <ManagedElementId string="KI0516_TCU01"/>
+            <primaryType type="STN"/>
+            <managedElementType types=""/>
+            <associatedSite string="Site=KI0516"/>
+            <nodeVersion string="T14B"/>
+            <platformVersion string="STN"/>
+            <swVersion string=""/>
+            <vendorName string=""/>
+            <userDefinedState string=""/>
+            <managedServiceAvailability int="1"/>
+            <isManaged boolean="true"/>
+            <connectionStatus string="ON"/>
+            <Connectivity>
+               <DEFAULT>
+                  <emUrl url="10.38.50.72"/>
+                  <ipAddress string="10.38.50.72"/>
+                  <oldIpAddress string=""/>
+                  <hostname string="KI0516"/>
+                  <nodeSecurityState state="ON"/>
+                  <boardId string=""/>
+                  <Protocol number="0">
+                     <protocolType string="SNMP"/>
+                     <port int="161"/>
+                     <protocolVersion string="V2C"/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string="public"/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Protocol number="1">
+                     <protocolType string="SSH"/>
+                     <port int="22"/>
+                     <protocolVersion string=""/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string=""/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Browser>
+                     <browser string=""/>
+                     <browserURL string=""/>
+                     <bookname string=""/>
+                  </Browser>
+               </DEFAULT>
+            </Connectivity>
+            <Tss>
+               <Entry>
+                  <System string="KI0516_TCU01"/>
+                  <Type string="SECURE"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+               <Entry>
+                  <System string="KI0516_TCU01"/>
+                  <Type string="NORMAL"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+            </Tss>
+            <Relationship>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmdown-kinedss" AssociationType="ManagedElement_to_neTransientCmDown"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmup-kinedss" AssociationType="ManagedElement_to_neTransientCmUp"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=pmup-kinedss" AssociationType="ManagedElement_to_neTransientPm"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=swstore-kinedss" AssociationType="ManagedElement_to_ftpSwStore"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0516_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BssFunction"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction,BtsSiteMgr=KI0516" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0516_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BtsSiteMgr"/>
+               <AssociableNode TO_FDN="ManagementNode=ONRM" AssociationType="MgmtAssociation"/>
+            </Relationship>
+         </ManagedElement>
+         <ManagedElement sourceType="SIU">
+            <ManagedElementId string="KI0360_TCU01"/>
+            <primaryType type="STN"/>
+            <managedElementType types=""/>
+            <associatedSite string="Site=KI0360"/>
+            <nodeVersion string="T14B"/>
+            <platformVersion string="STN"/>
+            <swVersion string=""/>
+            <vendorName string=""/>
+            <userDefinedState string=""/>
+            <managedServiceAvailability int="1"/>
+            <isManaged boolean="true"/>
+            <connectionStatus string="ON"/>
+            <Connectivity>
+               <DEFAULT>
+                  <emUrl url="10.38.50.37"/>
+                  <ipAddress string="10.38.50.37"/>
+                  <oldIpAddress string=""/>
+                  <hostname string="KI0360"/>
+                  <nodeSecurityState state="ON"/>
+                  <boardId string=""/>
+                  <Protocol number="0">
+                     <protocolType string="SNMP"/>
+                     <port int="161"/>
+                     <protocolVersion string="V2C"/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string="public"/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Protocol number="1">
+                     <protocolType string="SSH"/>
+                     <port int="22"/>
+                     <protocolVersion string=""/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string=""/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Browser>
+                     <browser string=""/>
+                     <browserURL string=""/>
+                     <bookname string=""/>
+                  </Browser>
+               </DEFAULT>
+            </Connectivity>
+            <Tss>
+               <Entry>
+                  <System string="KI0360_TCU01"/>
+                  <Type string="SECURE"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+               <Entry>
+                  <System string="KI0360_TCU01"/>
+                  <Type string="NORMAL"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+            </Tss>
+            <Relationship>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmdown-kinedss" AssociationType="ManagedElement_to_neTransientCmDown"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmup-kinedss" AssociationType="ManagedElement_to_neTransientCmUp"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=pmup-kinedss" AssociationType="ManagedElement_to_neTransientPm"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=swstore-kinedss" AssociationType="ManagedElement_to_ftpSwStore"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0360_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BssFunction"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction,BtsSiteMgr=KI0360" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0360_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BtsSiteMgr"/>
+               <AssociableNode TO_FDN="ManagementNode=ONRM" AssociationType="MgmtAssociation"/>
+            </Relationship>
+         </ManagedElement>
+         <ManagedElement sourceType="SIU">
+            <ManagedElementId string="KI0128_TCU01"/>
+            <primaryType type="STN"/>
+            <managedElementType types=""/>
+            <associatedSite string="Site=KI0128"/>
+            <nodeVersion string="T14B"/>
+            <platformVersion string="STN"/>
+            <swVersion string=""/>
+            <vendorName string=""/>
+            <userDefinedState string=""/>
+            <managedServiceAvailability int="1"/>
+            <isManaged boolean="true"/>
+            <connectionStatus string="ON"/>
+            <Connectivity>
+               <DEFAULT>
+                  <emUrl url="10.38.50.70"/>
+                  <ipAddress string="10.38.50.70"/>
+                  <oldIpAddress string=""/>
+                  <hostname string="KI0128"/>
+                  <nodeSecurityState state="ON"/>
+                  <boardId string=""/>
+                  <Protocol number="0">
+                     <protocolType string="SNMP"/>
+                     <port int="161"/>
+                     <protocolVersion string="V2C"/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string="public"/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Protocol number="1">
+                     <protocolType string="SSH"/>
+                     <port int="22"/>
+                     <protocolVersion string=""/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string=""/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Browser>
+                     <browser string=""/>
+                     <browserURL string=""/>
+                     <bookname string=""/>
+                  </Browser>
+               </DEFAULT>
+            </Connectivity>
+            <Tss>
+               <Entry>
+                  <System string="KI0128_TCU01"/>
+                  <Type string="SECURE"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+               <Entry>
+                  <System string="KI0128_TCU01"/>
+                  <Type string="NORMAL"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+            </Tss>
+            <Relationship>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmdown-kinedss" AssociationType="ManagedElement_to_neTransientCmDown"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmup-kinedss" AssociationType="ManagedElement_to_neTransientCmUp"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=pmup-kinedss" AssociationType="ManagedElement_to_neTransientPm"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=swstore-kinedss" AssociationType="ManagedElement_to_ftpSwStore"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0128_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BssFunction"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction,BtsSiteMgr=KI0128" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0128_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BtsSiteMgr"/>
+               <AssociableNode TO_FDN="ManagementNode=ONRM" AssociationType="MgmtAssociation"/>
+            </Relationship>
+         </ManagedElement>
+         <ManagedElement sourceType="SIU">
+            <ManagedElementId string="KI0262_TCU01"/>
+            <primaryType type="STN"/>
+            <managedElementType types=""/>
+            <associatedSite string="Site=KI0262"/>
+            <nodeVersion string="T14B"/>
+            <platformVersion string="STN"/>
+            <swVersion string=""/>
+            <vendorName string=""/>
+            <userDefinedState string=""/>
+            <managedServiceAvailability int="1"/>
+            <isManaged boolean="true"/>
+            <connectionStatus string="ON"/>
+            <Connectivity>
+               <DEFAULT>
+                  <emUrl url="10.38.50.1"/>
+                  <ipAddress string="10.38.50.1"/>
+                  <oldIpAddress string=""/>
+                  <hostname string="KI0262"/>
+                  <nodeSecurityState state="ON"/>
+                  <boardId string=""/>
+                  <Protocol number="0">
+                     <protocolType string="SNMP"/>
+                     <port int="161"/>
+                     <protocolVersion string="V2C"/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string="public"/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Protocol number="1">
+                     <protocolType string="SSH"/>
+                     <port int="22"/>
+                     <protocolVersion string=""/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string=""/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Browser>
+                     <browser string=""/>
+                     <browserURL string=""/>
+                     <bookname string=""/>
+                  </Browser>
+               </DEFAULT>
+            </Connectivity>
+            <Tss>
+               <Entry>
+                  <System string="KI0262_TCU01"/>
+                  <Type string="SECURE"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+               <Entry>
+                  <System string="KI0262_TCU01"/>
+                  <Type string="NORMAL"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+            </Tss>
+            <Relationship>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmdown-kinedss" AssociationType="ManagedElement_to_neTransientCmDown"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmup-kinedss" AssociationType="ManagedElement_to_neTransientCmUp"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=pmup-kinedss" AssociationType="ManagedElement_to_neTransientPm"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=swstore-kinedss" AssociationType="ManagedElement_to_ftpSwStore"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0262_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BssFunction"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction,BtsSiteMgr=KI0262" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0262_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BtsSiteMgr"/>
+               <AssociableNode TO_FDN="ManagementNode=ONRM" AssociationType="MgmtAssociation"/>
+            </Relationship>
+         </ManagedElement>
+         <ManagedElement sourceType="SIU">
+            <ManagedElementId string="KI0199_TCU01"/>
+            <primaryType type="STN"/>
+            <managedElementType types=""/>
+            <associatedSite string="Site=KI0199"/>
+            <nodeVersion string="T14B"/>
+            <platformVersion string="STN"/>
+            <swVersion string=""/>
+            <vendorName string=""/>
+            <userDefinedState string=""/>
+            <managedServiceAvailability int="1"/>
+            <isManaged boolean="true"/>
+            <connectionStatus string="ON"/>
+            <Connectivity>
+               <DEFAULT>
+                  <emUrl url="10.38.50.3"/>
+                  <ipAddress string="10.38.50.3"/>
+                  <oldIpAddress string=""/>
+                  <hostname string="KI0199"/>
+                  <nodeSecurityState state="ON"/>
+                  <boardId string=""/>
+                  <Protocol number="0">
+                     <protocolType string="SNMP"/>
+                     <port int="161"/>
+                     <protocolVersion string="V2C"/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string="public"/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Protocol number="1">
+                     <protocolType string="SSH"/>
+                     <port int="22"/>
+                     <protocolVersion string=""/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string=""/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Browser>
+                     <browser string=""/>
+                     <browserURL string=""/>
+                     <bookname string=""/>
+                  </Browser>
+               </DEFAULT>
+            </Connectivity>
+            <Tss>
+               <Entry>
+                  <System string="KI0199_TCU01"/>
+                  <Type string="SECURE"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+               <Entry>
+                  <System string="KI0199_TCU01"/>
+                  <Type string="NORMAL"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+            </Tss>
+            <Relationship>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmdown-kinedss" AssociationType="ManagedElement_to_neTransientCmDown"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmup-kinedss" AssociationType="ManagedElement_to_neTransientCmUp"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=pmup-kinedss" AssociationType="ManagedElement_to_neTransientPm"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=swstore-kinedss" AssociationType="ManagedElement_to_ftpSwStore"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0199_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BssFunction"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction,BtsSiteMgr=KI0199" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0199_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BtsSiteMgr"/>
+               <AssociableNode TO_FDN="ManagementNode=ONRM" AssociationType="MgmtAssociation"/>
+            </Relationship>
+         </ManagedElement>
+         <ManagedElement sourceType="SIU">
+            <ManagedElementId string="KI0560_TCU01"/>
+            <primaryType type="STN"/>
+            <managedElementType types=""/>
+            <associatedSite string="Site=KI0560"/>
+            <nodeVersion string="T14B"/>
+            <platformVersion string="STN"/>
+            <swVersion string=""/>
+            <vendorName string=""/>
+            <userDefinedState string=""/>
+            <managedServiceAvailability int="1"/>
+            <isManaged boolean="true"/>
+            <connectionStatus string="ON"/>
+            <Connectivity>
+               <DEFAULT>
+                  <emUrl url="10.38.49.218"/>
+                  <ipAddress string="10.38.49.218"/>
+                  <oldIpAddress string=""/>
+                  <hostname string="KI0560"/>
+                  <nodeSecurityState state="ON"/>
+                  <boardId string=""/>
+                  <Protocol number="0">
+                     <protocolType string="SNMP"/>
+                     <port int="161"/>
+                     <protocolVersion string="V2C"/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string="public"/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Protocol number="1">
+                     <protocolType string="SSH"/>
+                     <port int="22"/>
+                     <protocolVersion string=""/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string=""/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Browser>
+                     <browser string=""/>
+                     <browserURL string=""/>
+                     <bookname string=""/>
+                  </Browser>
+               </DEFAULT>
+            </Connectivity>
+            <Tss>
+               <Entry>
+                  <System string="KI0560_TCU01"/>
+                  <Type string="SECURE"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+               <Entry>
+                  <System string="KI0560_TCU01"/>
+                  <Type string="NORMAL"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+            </Tss>
+            <Relationship>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmdown-kinedss" AssociationType="ManagedElement_to_neTransientCmDown"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmup-kinedss" AssociationType="ManagedElement_to_neTransientCmUp"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=pmup-kinedss" AssociationType="ManagedElement_to_neTransientPm"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=swstore-kinedss" AssociationType="ManagedElement_to_ftpSwStore"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0560_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BssFunction"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction,BtsSiteMgr=KI0560" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0560_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BtsSiteMgr"/>
+               <AssociableNode TO_FDN="ManagementNode=ONRM" AssociationType="MgmtAssociation"/>
+            </Relationship>
+         </ManagedElement>
+         <ManagedElement sourceType="SIU">
+            <ManagedElementId string="KI0127_TCU01"/>
+            <primaryType type="STN"/>
+            <managedElementType types=""/>
+            <associatedSite string="Site=KI0127"/>
+            <nodeVersion string="T14B"/>
+            <platformVersion string="STN"/>
+            <swVersion string=""/>
+            <vendorName string=""/>
+            <userDefinedState string=""/>
+            <managedServiceAvailability int="1"/>
+            <isManaged boolean="true"/>
+            <connectionStatus string="ON"/>
+            <Connectivity>
+               <DEFAULT>
+                  <emUrl url="10.38.50.68"/>
+                  <ipAddress string="10.38.50.68"/>
+                  <oldIpAddress string=""/>
+                  <hostname string="KI0127"/>
+                  <nodeSecurityState state="ON"/>
+                  <boardId string=""/>
+                  <Protocol number="0">
+                     <protocolType string="SNMP"/>
+                     <port int="161"/>
+                     <protocolVersion string="V2C"/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string="public"/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Protocol number="1">
+                     <protocolType string="SSH"/>
+                     <port int="22"/>
+                     <protocolVersion string=""/>
+                     <securityName string=""/>
+                     <authenticationMethod string=""/>
+                     <encryptionMethod string=""/>
+                     <communityString string=""/>
+                     <context string=""/>
+                     <namingUrl string=""/>
+                     <namingPort int=""/>
+                     <notificationIRPAgentVersion string=""/>
+                     <alarmIRPAgentVersion string=""/>
+                     <notificationIRPNamingContext context=""/>
+                     <alarmIRPNamingContext context=""/>
+                  </Protocol>
+                  <Browser>
+                     <browser string=""/>
+                     <browserURL string=""/>
+                     <bookname string=""/>
+                  </Browser>
+               </DEFAULT>
+            </Connectivity>
+            <Tss>
+               <Entry>
+                  <System string="KI0127_TCU01"/>
+                  <Type string="SECURE"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+               <Entry>
+                  <System string="KI0127_TCU01"/>
+                  <Type string="NORMAL"/>
+                  <User string="admin"/>
+                  <Password string="hidden"/>
+               </Entry>
+            </Tss>
+            <Relationship>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmdown-kinedss" AssociationType="ManagedElement_to_neTransientCmDown"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=cmup-kinedss" AssociationType="ManagedElement_to_neTransientCmUp"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=pmup-kinedss" AssociationType="ManagedElement_to_neTransientPm"/>
+               <AssociableNode TO_FDN="FtpServer=SMRSSLAVE-kinedss,FtpService=swstore-kinedss" AssociationType="ManagedElement_to_ftpSwStore"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0127_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BssFunction"/>
+               <AssociableNode TO_FDN="ManagedElement=KIEB5,BssFunction=BSS_ManagedFunction,BtsSiteMgr=KI0127" FROM_FDN="SubNetwork=IPRAN,ManagedElement=KI0127_TCU01,StnFunction=STN_ManagedFunction" AssociationType="StnFunction_to_BtsSiteMgr"/>
+               <AssociableNode TO_FDN="ManagementNode=ONRM" AssociationType="MgmtAssociation"/>
+            </Relationship>
+         </ManagedElement>
+      </SubNetwork>
+  </Create>
+</Model>
